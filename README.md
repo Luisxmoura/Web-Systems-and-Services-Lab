@@ -1,42 +1,45 @@
 # Web-Systems-and-Services-Lab
 🏎️ LMoura Stand – Web Systems Laboratory Project
-This project was developed for the Web Systems and Services Laboratory course. It features a functional website for a car dealership, demonstrating the practical use of client-side technologies and semantic web structure.
+This project was developed for the Web Systems and Services Laboratory course (Unit 21182). It consists of a functional car dealership website built strictly with client-side technologies, following all the requirements specified in E-fólio A.
 
-🛠️ Technologies & Concepts
-Semantic HTML5: Used for all page structures, including technical tables and contact forms.
+🎯 Project Requirements Fulfilled
+According to the course evaluation criteria, this project implements:
 
-CSS3 Styling: Complete separation of content and presentation, utilizing CSS variables for theme management.
+Strict Separation of Content and Presentation: All styling is handled via external CSS, allowing for design changes without modifying the HTML structure.
 
-Vanilla JavaScript: Logic implemented without external frameworks for interactive features and DOM manipulation.
+Semantic Structure: Organized into 7 interconnected HTML pages (including index.html and about.html).
 
-🌟 Key Features
-Multilingual Support (PT/EN): Dynamic language switching using data-pt and data-en attributes.
+Dynamic Features (JavaScript): Implementation of 4 interactive elements (exceeding the minimum requirement of 3).
 
-Dark Mode Toggle: Real-time theme switching between Day and Night modes.
+🌟 Key Dynamic Features
+Language Switcher (PT/EN): A custom-built translation engine that toggles content between Portuguese and English using data attributes.
 
-Image Modal Gallery: Interactive zoom feature for viewing vehicle photos.
+Theme Toggle (Day/Night): Real-time color scheme inversion (Dark Mode) using JavaScript class manipulation and CSS variables.
 
-Form Validation: Custom JS validation for the contact form, including email format checking.
+Image Modal Gallery: A "Zoom" feature that allows users to view enlarged vehicle images through a modal window.
 
-📂 Project Structure
-Based on the repository layout:
+Form Validation: Custom client-side validation for the contact form, ensuring correct data format and user feedback.
 
-index.html: Homepage with site highlights and values.
+🛠️ Technologies Used
+HTML5: Semantic markup for tables, forms, and layout.
 
-carros.html: Vehicle catalog with pricing and details.
+CSS3: Advanced styling using variables for theme management and responsive design.
 
-destaques.html: Featured deals and technical comparison tables.
+Vanilla JavaScript: Pure logic for all dynamic elements, strictly avoiding external libraries as per the project's guidelines.
 
-servicos.html: Information on maintenance, financing, and warranties.
+📂 Repository Structure
+index.html – Home page and main menu.
 
-contacto.html: Contact details and a validated message form.
+carros.html – Vehicle catalog.
 
-about.html: Technical project report and development goals.
+destaques.html – Comparison tables and featured deals.
 
-/css: Directory for styling assets (style.css).
+servicos.html – Services and maintenance info.
 
-/img: Directory for vehicle and UI images.
+contacto.html – Validated contact form.
 
-/js: Directory for functional logic (app.js).
+about.html – Technical report and project description.
 
-Note: The project highlights a clean separation of concerns, where JavaScript handles state (language and theme) directly via the DOM for a lightweight user experience.
+/js/app.js – Core JavaScript logic.
+
+/css/style.css – Centralized styles.
