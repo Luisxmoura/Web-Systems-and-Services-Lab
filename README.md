@@ -42,4 +42,8 @@ about.html – Technical report and project description.
 
 /js/app.js – Core JavaScript logic.
 
+👨‍💻 Author
+Luis Moura
+Computer Engineering Student
+
 /css/style.css – Centralized styles.
