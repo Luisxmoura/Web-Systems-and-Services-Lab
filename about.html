@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMoura Stand – Relatório do Trabalho</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="modal-imagem">
+    <img id="img-modal" src="" alt="Imagem ampliada">
+    <button class="fechar-modal" onclick="fecharModal()"
+      data-pt="Fechar" data-en="Close">Fechar</button>
+  </div>
+
+  <header>
+    <div class="logo"><span>L</span>Moura Stand</div>
+    <nav>
+      <a href="index.html"
+         data-pt="Início" data-en="Home">Início</a>
+      <a href="carros.html"
+         data-pt="Carros" data-en="Cars">Carros</a>
+      <a href="destaques.html"
+         data-pt="Destaques" data-en="Featured">Destaques</a>
+      <a href="servicos.html"
+         data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="contacto.html"
+         data-pt="Contacto" data-en="Contact">Contacto</a>
+      <a href="about.html" class="ativo"
+         data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+    <div class="controles">
+      <button id="btn-lingua" class="btn-controle"
+              onclick="alternarLingua()">EN</button>
+      <button id="btn-modo" class="btn-controle"
+              onclick="alternarModo()">Noite</button>
+    </div>
+  </header>
+
+  <main>
+
+    <h1 data-pt="Relatório do Trabalho" data-en="Project Report">Relatório do Trabalho</h1>
+
+    <div class="formulario" style="max-width: 800px;">
+
+      <h2 data-pt="Finalidade do Site" data-en="Site Purpose">Finalidade do Site</h2>
+      <p data-pt="O projeto LMoura Stand foi desenvolvido para o E-fólio A da unidade curricular de Laboratório de Sistemas e Serviços Web. O objetivo é demonstrar a aplicação prática de tecnologias client-side (HTML5, CSS3 e JavaScript) na criação de um site para um concessionário automóvel, focando-se na estruturação semântica e na experiência do utilizador."
+         data-en="The LMoura Stand project was developed for E-folio A of the Web Systems and Services Laboratory course. The goal is to demonstrate the practical application of client-side technologies (HTML5, CSS3, and JavaScript) in creating a website for a car dealership, focusing on semantic structure and user experience.">
+        O projeto <strong>LMoura Stand</strong> foi desenvolvido para o E-fólio A da unidade curricular de Laboratório de Sistemas e Serviços Web. O objetivo é demonstrar a aplicação prática de tecnologias <em>client-side</em> (HTML5, CSS3 e JavaScript) na criação de um site para um concessionário automóvel, focando-se na estruturação semântica e na experiência do utilizador.
+      </p>
+
+      <h2 data-pt="Organização Lógica" data-en="Logical Organization">Organização Lógica</h2>
+      <p data-pt="O site está organizado em seis páginas distintas que cobrem as necessidades de um stand virtual:"
+         data-en="The site is organized into six distinct pages covering the needs of a virtual showroom:">
+        O site está organizado em seis páginas distintas que cobrem as necessidades de um stand virtual:
+      </p>
+      
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 15px;" 
+            data-pt="Início: Apresentação dos pontos fortes e valores do stand." 
+            data-en="Home: Presentation of the stand's strengths and values.">
+            <strong>Início:</strong> Apresentação dos pontos fortes e valores do stand.
+        </li>
+        <li style="margin-bottom: 15px;" 
+            data-pt="Carros: Listagem dos veículos disponíveis com detalhes técnicos e preços." 
+            data-en="Cars: Listing of available vehicles with technical details and prices.">
+            <strong>Carros:</strong> Listagem dos veículos disponíveis com detalhes técnicos e preços.
+        </li>
+        <li style="margin-bottom: 15px;" 
+            data-pt="Destaques: Comparação de dados técnicos e promoções específicas." 
+            data-en="Featured: Comparison of technical data and specific promotions.">
+            <strong>Destaques:</strong> Comparação de dados técnicos e promoções específicas.
+        </li>
+        <li style="margin-bottom: 15px;" 
+            data-pt="Serviços: Informações sobre pós-venda, garantias e financiamento." 
+            data-en="Services: Information about after-sales, warranties, and financing.">
+            <strong>Serviços:</strong> Informações sobre pós-venda, garantias e financiamento.
+        </li>
+        <li style="margin-bottom: 15px;" 
+            data-pt="Contacto: Localização e formulário de mensagem com validação." 
+            data-en="Contact: Location and message form with validation.">
+            <strong>Contacto:</strong> Localização e formulário de mensagem com validação.
+        </li>
+        <li style="margin-bottom: 15px;" 
+            data-pt="Sobre: Descreve o desenvolvimento do projeto." 
+            data-en="About: Describes the project development.">
+            <strong>Sobre:</strong> Descreve o desenvolvimento do projeto.
+        </li>
+      </ul>
+
+      <h2 data-pt="Separação de Conteúdo e Formatação" data-en="Content and Formatting Separation">Separação de Conteúdo e Formatação</h2>
+      <p data-pt="Foi implementada uma separação entre a estrutura (HTML) e a apresentação (CSS). Toda a estilização está centralizada no ficheiro css/style.css. A utilização de variáveis CSS permitiu a gestão dinâmica de cores e a implementação de temas, garantindo que qualquer alteração visual possa ser feita num único ficheiro sem necessidade de editar o código das páginas individuais."
+         data-en="A separation between structure (HTML) and presentation (CSS) was implemented. All styling is centralized in the css/style.css file. The use of CSS variables allowed for dynamic color management and theme implementation, ensuring that any visual change can be made in a single file without needing to edit the code of individual pages.">
+        Foi implementada uma separação entre a estrutura (HTML) e a apresentação (CSS). Toda a estilização está centralizada no ficheiro <code>css/style.css</code>. A utilização de variáveis CSS permitiu a gestão dinâmica de cores e a implementação de temas, garantindo que qualquer alteração visual possa ser feita num único ficheiro sem necessidade de editar o código das páginas individuais.
+      </p>
+
+      <h2 data-pt="Funcionalidades Dinâmicas e Limitações" data-en="Dynamic Features and Limitations">Funcionalidades Dinâmicas e Limitações</h2>
+      <p data-pt="Recorrendo ao ficheiro js/app.js, foram criadas três funcionalidades interativas:"
+         data-en="Using the js/app.js file, three interactive features were created:">
+        Recorrendo ao ficheiro <code>js/app.js</code>, foram criadas três funcionalidades interativas:
+      </p>
+
+      <p style="margin-bottom: 15px;">
+        <strong data-pt="Sistema Multilíngue (PT/EN):" data-en="1. Multilingual System (PT/EN):">Sistema Multilíngue (PT/EN):</strong> 
+        <span data-pt="O site permite alternar o conteúdo entre português e inglês. Por ser uma implementação estritamente client-side e não utilizar métodos de persistência de dados (como cookies ou localStorage), o idioma volta ao padrão sempre que uma nova página é carregada, uma vez que a escolha não fica registada entre ciclos de navegação."
+              data-en="The site allows content to be toggled between Portuguese and English. Being a strictly client-side implementation and not using data persistence methods (such as cookies or localStorage), the language reverts to the default whenever a new page is loaded, as the choice is not registered between navigation cycles.">
+              O site permite alternar o conteúdo entre português e inglês. Por ser uma implementação estritamente <em>client-side</em> e não utilizar métodos de persistência de dados (como <em>cookies</em> ou <em>localStorage</em>), o idioma volta ao padrão sempre que uma nova página é carregada, uma vez que a escolha não fica registada entre ciclos de navegação.
+        </span>
+      </p>
+
+      <p style="margin-bottom: 15px;">
+        <strong data-pt="Switch de Tema (Dia/Noite):" data-en="2. Theme Switch (Day/Night):">Switch de Tema (Dia/Noite):</strong> 
+        <span data-pt="Implementada através da manipulação de classes no body, permite a inversão do esquema de cores."
+              data-en="Implemented through class manipulation on the body, it allows for color scheme inversion.">
+              Implementada através da manipulação de classes no <code>body</code>, permite a inversão do esquema de cores.
+        </span>
+      </p>
+
+      <p style="margin-bottom: 15px;">
+        <strong data-pt="Visualização de Imagem Ampliada:" data-en="3. Zoom Image View:">Visualização de Imagem Ampliada:</strong> 
+        <span data-pt="Utilização de uma janela modal para destacar as fotografias dos veículos, permite uma visualização mais detalhada sem sair da página atual."
+              data-en="Use of a modal window to highlight vehicle photos, allowing for a more detailed view without leaving the current page.">
+              Utilização de uma janela modal para destacar as fotografias dos veículos, permite uma visualização mais detalhada sem sair da página atual.
+        </span>
+      </p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p> Luis Moura 2405278</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

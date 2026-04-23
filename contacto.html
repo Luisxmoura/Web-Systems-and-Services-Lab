@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMoura Stand – Contacto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal da imagem ampliada -->
+  <div id="modal-imagem">
+    <img id="img-modal" src="" alt="Imagem ampliada">
+    <button class="fechar-modal" onclick="fecharModal()"
+      data-pt="Fechar" data-en="Close">Fechar</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo"><span>L</span>Moura Stand</div>
+    <nav>
+      <a href="index.html"
+         data-pt="Início" data-en="Home">Início</a>
+      <a href="carros.html"
+         data-pt="Carros" data-en="Cars">Carros</a>
+      <a href="destaques.html"
+         data-pt="Destaques" data-en="Featured">Destaques</a>
+      <a href="servicos.html"
+         data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="contacto.html" class="ativo"
+         data-pt="Contacto" data-en="Contact">Contacto</a>
+      <a href="about.html"
+         data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+    <div class="controles">
+      <button id="btn-lingua" class="btn-controle"
+              onclick="alternarLingua()">EN</button>
+      <button id="btn-modo" class="btn-controle"
+              onclick="alternarModo()">Noite</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <h1 data-pt="Contacte-nos" data-en="Contact Us">Contacte-nos</h1>
+    <p data-pt="Estamos disponíveis para responder a todas as suas questões. Preencha o formulário ou utilize os nossos contactos diretos."
+       data-en="We are available to answer all your questions. Fill in the form or use our direct contacts.">
+      Estamos disponíveis para responder a todas as suas questões. Preencha o formulário ou utilize os nossos contactos diretos.
+    </p>
+
+    <!-- Informações de contacto -->
+    <div class="info-bloco" style="margin-top: 24px;">
+      <h3 data-pt="Morada" data-en="Address">Morada</h3>
+      <p>Palácio Ceia, Rua da Escola Politécnica &mdash; 141-147, 1269-001 Lisboa</p>
+    </div>
+
+    <div class="info-bloco">
+      <h3 data-pt=" Telefone e E-mail" data-en="Phone and E-mail">Telefone e E-mail</h3>
+      <p>Tel: +351 213 916 333 &nbsp;|&nbsp; E-mail: 2405278@estudante.uab.pt</p>
+    </div>
+
+    <div class="info-bloco">
+      <h3 data-pt="Horário" data-en="Opening Hours">Horário</h3>
+      <p data-pt="Segunda a Sexta: 09:00 – 18:30 | Sábado: 09:00 – 13:00 | Domingo: Encerrado"
+         data-en="Monday to Friday: 09:00 – 18:30 | Saturday: 09:00 – 13:00 | Sunday: Closed">
+        Segunda a Sexta: 09:00 – 18:30 | Sábado: 09:00 – 13:00 | Domingo: Encerrado
+      </p>
+    </div>
+
+    <!-- Formulário -->
+    <h2 data-pt="Envie-nos uma Mensagem" data-en="Send Us a Message">Envie-nos uma Mensagem</h2>
+
+    <div class="formulario">
+
+      <div class="campo">
+        <label for="nome" data-pt="Nome completo" data-en="Full name">Nome completo</label>
+        <input type="text" id="nome" placeholder="Luís Moura">
+      </div>
+
+      <div class="campo">
+        <label for="email" data-pt="Endereço de e-mail" data-en="E-mail address">Endereço de e-mail</label>
+        <input type="text" id="email" placeholder="exemplo@email.com">
+      </div>
+
+      <div class="campo">
+        <label for="assunto" data-pt="Assunto" data-en="Subject">Assunto</label>
+        <select id="assunto">
+          <option data-pt="Informação sobre um veículo" data-en="Vehicle information">Informação sobre um veículo</option>
+          <option data-pt="Marcação de test drive" data-en="Test drive booking">Marcação de test drive</option>
+          <option data-pt="Financiamento" data-en="Financing">Financiamento</option>
+          <option data-pt="Outro" data-en="Other">Outro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem" data-pt="Mensagem" data-en="Message">Mensagem</label>
+        <textarea id="mensagem" placeholder="Escreva aqui a sua mensagem..."></textarea>
+      </div>
+
+      <button class="btn-enviar" onclick="validarFormulario()"
+              data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
+
+      <p id="aviso-form" class="mensagem-ok" style="margin-top: 12px;"></p>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+  <p>Luis Moura 2405278</p>
+</footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

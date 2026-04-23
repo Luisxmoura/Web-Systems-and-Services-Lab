@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMoura Stand – Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal de imagem ampliada (partilhado por todas as páginas) -->
+  <div id="modal-imagem">
+    <img id="img-modal" src="" alt="Imagem ampliada">
+    <button class="fechar-modal" onclick="fecharModal()"
+      data-pt="Fechar" data-en="Close">Fechar</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo"><span>L</span>Moura Stand</div>
+    <nav>
+      <a href="index.html" class="ativo"
+         data-pt="Início" data-en="Home">Início</a>
+      <a href="carros.html"
+         data-pt="Carros" data-en="Cars">Carros</a>
+      <a href="destaques.html"
+         data-pt="Destaques" data-en="Featured">Destaques</a>
+      <a href="servicos.html"
+         data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="contacto.html"
+         data-pt="Contacto" data-en="Contact">Contacto</a>
+      <a href="about.html"
+         data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+    <div class="controles">
+      <button id="btn-lingua" class="btn-controle"
+              onclick="alternarLingua()">EN</button>
+      <button id="btn-modo" class="btn-controle"
+              onclick="alternarModo()">Noite</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1 data-pt="Bem-vindo ao LMoura Stand" data-en="Welcome to LMoura Stand">
+        Bem-vindo ao LMoura Stand
+      </h1>
+      <p data-pt="O seu concessionário de confiança. Encontre o carro dos seus sonhos com qualidade garantida e preços competitivos."
+         data-en="Your trusted car dealership. Find the car of your dreams with guaranteed quality and competitive prices.">
+        O seu concessionário de confiança. Encontre o carro dos seus sonhos com qualidade garantida e preços competitivos.
+      </p>
+      <a href="carros.html" class="btn-principal"
+         data-pt="Ver Catálogo" data-en="View Catalogue">Ver Catálogo</a>
+    </div>
+
+    <!-- Por que escolher-nos -->
+    <h2 data-pt="Por que escolher o LMoura Stand?" data-en="Why choose LMoura Stand?">
+      Por que escolher o LMoura Stand?
+    </h2>
+
+    <div class="grelha">
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Qualidade Garantida" data-en="Guaranteed Quality">Qualidade Garantida</h3>
+          <p data-pt="Todos os veículos passam por uma inspeção rigorosa de 150 pontos antes de serem colocados à venda."
+             data-en="All vehicles undergo a rigorous 150-point inspection before being put up for sale.">
+            Todos os veículos passam por uma inspeção rigorosa de 150 pontos antes de serem colocados à venda.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Melhores Preços" data-en="Best Prices">Melhores Preços</h3>
+          <p data-pt="Praticamos preços justos e transparentes, sem taxas escondidas. Financiamento disponível."
+             data-en="We practice fair and transparent pricing with no hidden fees. Financing available.">
+            Praticamos preços justos e transparentes, sem taxas escondidas. Financiamento disponível.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Serviço Pós-Venda" data-en="After-Sales Service">Serviço Pós-Venda</h3>
+          <p data-pt="A nossa equipa técnica está disponível para manutenção e reparações com garantia de 12 meses."
+             data-en="Our technical team is available for maintenance and repairs with a 12-month warranty.">
+            A nossa equipa técnica está disponível para manutenção e reparações com garantia de 12 meses.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+  <p>Luis Moura 2405278</p>
+</footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

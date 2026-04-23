@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMoura Stand – Serviços</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Modal de imagem ampliada -->
+  <div id="modal-imagem">
+    <img id="img-modal" src="" alt="Imagem ampliada">
+    <button class="fechar-modal" onclick="fecharModal()"
+      data-pt="Fechar" data-en="Close">Fechar</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo"><span>L</span>Moura Stand</div>
+    <nav>
+      <a href="index.html"
+         data-pt="Início" data-en="Home">Início</a>
+      <a href="carros.html"
+         data-pt="Carros" data-en="Cars">Carros</a>
+      <a href="destaques.html"
+         data-pt="Destaques" data-en="Featured">Destaques</a>
+      <a href="servicos.html" class="ativo"
+         data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="contacto.html"
+         data-pt="Contacto" data-en="Contact">Contacto</a>
+      <a href="about.html"
+         data-pt="Sobre" data-en="About">Sobre</a>
+    </nav>
+    <div class="controles">
+      <button id="btn-lingua" class="btn-controle"
+              onclick="alternarLingua()">EN</button>
+      <button id="btn-modo" class="btn-controle"
+              onclick="alternarModo()">Noite</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <h1 data-pt="Os Nossos Serviços" data-en="Our Services">Os Nossos Serviços</h1>
+    <p data-pt="No LMoura Stand oferecemos muito mais do que a venda de veículos. Conheça tudo o que temos para si."
+       data-en="At LMoura Stand we offer much more than vehicle sales. Discover everything we have for you.">
+      No LMoura Stand oferecemos muito mais do que a venda de veículos. Conheça tudo o que temos para si.
+    </p>
+
+    <div class="grelha">
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Revisão e Manutenção" data-en="Service and Maintenance">Revisão e Manutenção</h3>
+          <p data-pt="Realizamos revisões completas segundo as indicações do fabricante, utilizando peças originais ou equivalentes de qualidade certificada."
+             data-en="We carry out full services according to manufacturer guidelines, using original or certified equivalent parts.">
+            Realizamos revisões completas segundo as indicações do fabricante, utilizando peças originais ou equivalentes de qualidade certificada.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Financiamento" data-en="Financing">Financiamento</h3>
+          <p data-pt="Trabalhamos com as principais entidades financeiras para lhe oferecer as melhores condições de crédito automóvel."
+             data-en="We work with leading financial institutions to offer you the best car loan conditions.">
+            Trabalhamos com as principais entidades financeiras para lhe oferecer as melhores condições de crédito automóvel.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Retoma de Viaturas" data-en="Vehicle Trade-In">Retoma de Viaturas</h3>
+          <p data-pt="Avaliamos o seu veículo atual e apresentamos uma proposta justa e competitiva. Simplificamos todo o processo de troca."
+             data-en="We evaluate your current vehicle and present a fair and competitive offer. We simplify the entire trade-in process.">
+            Avaliamos o seu veículo atual e apresentamos uma proposta justa e competitiva. Simplificamos todo o processo de troca.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Garantia Alargada" data-en="Extended Warranty">Garantia Alargada</h3>
+          <p data-pt="Todos os veículos incluem garantia mínima de 12 meses. Pode adquirir garantia alargada até 3 anos."
+             data-en="All vehicles include a minimum 12-month warranty. You can purchase extended warranty up to 3 years.">
+            Todos os veículos incluem garantia mínima de 12 meses. Pode adquirir garantia alargada até 3 anos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Test Drive" data-en="Test Drive">Test Drive</h3>
+          <p data-pt="Experimente qualquer veículo do nosso catálogo antes de comprar. Marque já o seu test drive gratuito."
+             data-en="Test drive any vehicle in our catalogue before buying. Book your free test drive now.">
+            Experimente qualquer veículo do nosso catálogo antes de comprar. Marque já o seu test drive gratuito.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-corpo">
+          <h3 data-pt="Tratamento de Documentação" data-en="Documentation Handling">Tratamento de Documentação</h3>
+          <p data-pt="Tratamos de toda a burocracia: transferência de propriedade, seguro, inspeção e muito mais."
+             data-en="We handle all the paperwork: ownership transfer, insurance, vehicle inspection, and more.">
+            Tratamos de toda a burocracia: transferência de propriedade, seguro, inspeção e muito mais.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+  <p>Luis Moura 2405278</p>
+</footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
